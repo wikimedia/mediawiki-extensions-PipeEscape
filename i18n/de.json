@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kghbln",
+			"Purodha"
+		]
+	},
+	"pipeescape-desc": "Ergänzt die Funktion <code>#!</code>, die als versteckter Parametertrenner genutzt werden kann"
+}

@@ -34,7 +34,7 @@ $wgExtensionCredits[ 'parserhook' ][] = array(
 );
 
 $dir = dirname(__FILE__) . DIRECTORY_SEPARATOR;
-$wgExtensionMessagesFiles['PipeEscape'] = $dir . 'PipeEscape.i18n.php';
+$wgMessagesDirs['PipeEscape'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PipeEscapeMagic'] = $dir . 'PipeEscape.i18n.magic.php';
 
 class ExtPipeEsc
