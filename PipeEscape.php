@@ -18,58 +18,25 @@
  *     allow alias names.
  */
 
-if ( !defined( 'MEDIAWIKI' ) )
-{
+if ( !defined( 'MEDIAWIKI' ) ) {
     die( 'This file is a MediaWiki extension, it is not a valid entry point.' );
 }
 
-$wgHooks[ 'ParserFirstCallInit' ][] = 'ExtPipeEsc::setup';
+$wgAutoloadClasses['ExtPipeEsc'] = __DIR__ . '/ExtPipeEsc.php';
+
 $wgExtensionCredits[ 'parserhook' ][] = array(
 	'path' => __FILE__,
-	'author' => 'David M. Sledge',
 	'name' => 'Pipe Escape',
+	'namemsg' => 'pipeescape-extensionname',
+	'author' => 'David M. Sledge',
 	'version' => ExtPipeEsc::VERSION,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
 	'descriptionmsg' => 'pipeescape-desc',
-	'namemsg' => 'pipeescape-extensionname',
 	'license-name' => 'GPL-2.0+',
 );
 
-$dir = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 $wgMessagesDirs['PipeEscape'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['PipeEscapeMagic'] = $dir . 'PipeEscape.i18n.magic.php';
+$wgExtensionMessagesFiles['PipeEscapeMagic'] = __DIR__ . '/PipeEscape.i18n.magic.php';
 
-class ExtPipeEsc
-{
-	const VERSION = '0.1.1';
-	private static $parserFunctions = array('!' => 'pipeChar');
+$wgHooks[ 'ParserFirstCallInit' ][] = 'ExtPipeEsc::setup';
 
-	public static function setup( &$parser )
-	{
-		// register each hook
-		foreach( self::$parserFunctions as $hook => $function )
-			$parser->setFunctionHook( $hook,
-				array( __CLASS__, $function ), SFH_OBJECT_ARGS );
-		return true;
-	}
-
-	public static function pipeChar( &$parser, $frame, $args )
-	{
-		$output = array_shift( $args );
-		// no parameters means we're done.  spit out an empty string
-		if ( !isset( $output ) )
-			return '';
-		// expand the first argument
-		$output = $frame->expand( $output );
-		// get the rest of the arguments, expand each one, prefix each expansion
-		// with a pipe character, and append it to the output string.
-		for ( $arg = array_shift( $args );
-			isset( $arg );
-			$arg = array_shift( $args ) )
-		{
-			$output .= '|' . $frame->expand( $arg );
-		}
-		//return '<pre><nowiki>'. trim( $output ) . '</nowiki></pre>';
-		return trim( $output );
-	}
-}
