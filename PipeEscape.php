@@ -25,12 +25,14 @@ if ( !defined( 'MEDIAWIKI' ) )
 
 $wgHooks[ 'ParserFirstCallInit' ][] = 'ExtPipeEsc::setup';
 $wgExtensionCredits[ 'parserhook' ][] = array(
-	'path'            => __FILE__,
-	'author'          => 'David M. Sledge',
-	'name'            => 'Pipe Escape',
-	'version'         => ExtPipeEsc::VERSION,
-	'url'             => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
-	'descriptionmsg'  => 'pipeescape-desc',
+	'path' => __FILE__,
+	'author' => 'David M. Sledge',
+	'name' => 'Pipe Escape',
+	'version' => ExtPipeEsc::VERSION,
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
+	'descriptionmsg' => 'pipeescape-desc',
+	'namemsg' => 'pipeescape-extensionname',
+	'license-name' => 'GPL-2.0+',
 );
 
 $dir = dirname(__FILE__) . DIRECTORY_SEPARATOR;
