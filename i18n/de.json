@@ -5,5 +5,5 @@
 			"Purodha"
 		]
 	},
-	"pipeescape-desc": "Ergänzt die Funktion <code>#!</code>, die als versteckter Parametertrenner genutzt werden kann"
+	"pipeescape-desc": "Bringt die Funktion <code>#!</code>, durch die Parametertrenner als normaler Text genutzt werden können"
 }
