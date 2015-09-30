@@ -13,6 +13,8 @@
  *     initial creation.
  * @version 0.1.1
  *     i18n support.
+ * @version 2.0.0
+ *     adaption to MediaWiki 1.26
  *
  * @todo
  *     allow alias names.
@@ -28,7 +30,10 @@ $wgExtensionCredits[ 'parserhook' ][] = array(
 	'path' => __FILE__,
 	'name' => 'Pipe Escape',
 	'namemsg' => 'pipeescape-extensionname',
-	'author' => 'David M. Sledge',
+	'author' => array(
+		'David M. Sledge',
+		'Purodha Blissenbach',
+		),
 	'version' => ExtPipeEsc::VERSION,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
 	'descriptionmsg' => 'pipeescape-desc',
@@ -39,4 +44,3 @@ $wgMessagesDirs['PipeEscape'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['PipeEscapeMagic'] = __DIR__ . '/PipeEscape.i18n.magic.php';
 
 $wgHooks[ 'ParserFirstCallInit' ][] = 'ExtPipeEsc::setup';
-

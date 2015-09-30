@@ -2,7 +2,7 @@
 
 class ExtPipeEsc {
 
-	const VERSION = '0.1.1';
+	const VERSION = '2.0.0.';
 	private static $parserFunctions = array('!' => 'pipeChar');
 
 	public static function setup( &$parser ) {
