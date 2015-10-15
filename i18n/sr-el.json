@@ -1,6 +1,4 @@
 {
-	"@metadata": {
-		"authors": []
-	},
+	"@metadata": [],
 	"pipeescape-desc": "Parserska funkcija <code>#!</code> za slučajeve kada pajp-karakter ('|') treba da bude samo to."
 }
