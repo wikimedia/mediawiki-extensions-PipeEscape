@@ -36,7 +36,7 @@
 	"autoload": {
 		"files": [
 			"PipeEscape.php"
-			]
+		]
 	},
 	"config": {
 		"optimize-autoloader": true,
