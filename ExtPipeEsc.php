@@ -9,7 +9,7 @@ class ExtPipeEsc {
 		// register each hook
 		foreach( self::$parserFunctions as $hook => $function )
 			$parser->setFunctionHook( $hook,
-				array( __CLASS__, $function ), SFH_OBJECT_ARGS );
+				array( __CLASS__, $function ), Parser::SFH_OBJECT_ARGS );
 		return true;
 	}
 
