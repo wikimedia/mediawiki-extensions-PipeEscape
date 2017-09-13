@@ -5,5 +5,5 @@
 			"Malafaya"
 		]
 	},
-	"pipeescape-desc": "Função do analisador sintáctico <code>#!</code> para quando se pretende que uma barra vertical (\"pipe\") seja apenas uma barra vertical."
+	"pipeescape-desc": "Função do analisador sintático <code>#!</code> para quando se pretende que uma barra vertical (\"pipe\") seja apenas uma barra vertical."
 }
