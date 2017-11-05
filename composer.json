@@ -26,7 +26,7 @@
 		"issues": "https://phabricator.wikimedia.org/tag/mediawiki-extensions-pipeescape/",
 		"wiki": "https://www.mediawiki.org/wiki/Extension:Pipe_Escape",
 		"forum": "https://www.mediawiki.org/wiki/Extension_talk:Pipe_Escape",
-		"source": "https://git.wikimedia.org/summary/?r=mediawiki/extensions/PipeEscape.git"
+		"source": "https://phabricator.wikimedia.org/diffusion/EPIE/"
 	},
 	"require": {
 		"php": ">=5.0.0",
