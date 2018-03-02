@@ -41,7 +41,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'version' => ExtPipeEsc::VERSION,
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
 	'descriptionmsg' => 'pipeescape-desc',
-	'license-name' => 'GPL-2.0+'
+	'license-name' => 'GPL-2.0-or-later'
 );
 
 // Register extension messages and other localisation.

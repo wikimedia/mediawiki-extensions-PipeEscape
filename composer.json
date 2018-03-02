@@ -10,7 +10,7 @@
 		"Pipe Escape"
 	],
 	"homepage": "https://www.mediawiki.org/wiki/Extension:Pipe_Escape",
-	"license": "GPL-2.0+",
+	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
 			"name": "David M. Sledge",
