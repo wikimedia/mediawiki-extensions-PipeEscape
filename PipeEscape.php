@@ -34,7 +34,7 @@ $wgExtensionCredits[ 'parserhook' ][] = array(
 		'David M. Sledge',
 		'Purodha Blissenbach',
 		),
-	'version' => ExtPipeEsc::VERSION,
+	'version' => '2.0.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Pipe_Escape',
 	'descriptionmsg' => 'pipeescape-desc',
 	'license-name' => 'GPL-2.0+',
