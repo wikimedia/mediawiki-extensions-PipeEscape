@@ -4,5 +4,6 @@
 			"Meno25"
 		]
 	},
-	"pipeescape-desc": "دالة محلل <code>#!</code> لعندما تريد حرف أنبوبة ليكون فقط حرف أنبوبة"
+	"pipeescape-desc": "دالة محلل <code>#!</code> لعندما تريد حرف أنبوبة ليكون فقط حرف أنبوبة",
+	"pipeescape-extensionname": "بايب إسكيب"
 }
