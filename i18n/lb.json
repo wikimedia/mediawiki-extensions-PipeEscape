@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
-	"pipeescape-desc": "Parserfonctioun <code>#!</code> fir den Trenn-Parameter als normale Buchstaw ze benotzen"
+	"pipeescape-desc": "Parserfunktioun <code>#!</code> fir den Trenn-Parameter als normale Buschtaf ze benotzen"
 }
