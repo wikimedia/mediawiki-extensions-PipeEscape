@@ -37,7 +37,10 @@
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		},
 		"optimize-autoloader": true,
-		"prepend-autoloader": false
+		"prepend-autoloader": false,
+		"audit": {
+			"block-insecure": false
+		}
 	},
 	"suggest": {},
 	"require-dev": {
